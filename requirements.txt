@@ -1,0 +1,3 @@
+aiohttp
+graphene
+python-dotenv
