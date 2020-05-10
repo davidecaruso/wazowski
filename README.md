@@ -56,7 +56,7 @@ query Query {
 }
 ```
 
-#### Get next free port to a given one in a range
+#### Get the next free port to a given one in a range
 > **POST** /graphql
 
 ```graphql
@@ -85,23 +85,6 @@ query Query {
 ```json
 {
   "data": {
-    "next": 3006
-  }
-}
-```
-
-#### Get the previous free port to a given one in a range
-> **POST** /graphql
-
-```graphql
-query Query {
-  previous(port: 3007, start: 3000, end: 3010, host: "127.0.0.1")
-}
-```
-> **200**
-```json
-{
-  "data": {
     "previous": 3006
   }
 }
@@ -112,7 +95,7 @@ query Query {
 
 ```graphql
 query Query {
-  random(start: 3000, end: 3010, host: "127.0.0.1")
+  random(start: 3000, end: 4000, host: "127.0.0.1")
 }
 ```
 > **200**
