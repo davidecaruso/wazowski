@@ -6,8 +6,17 @@
 
 ## Install
 ```shell script
-git clone git@github.com:davidecaruso/wazowski.git && cd wazowski
-cp .env.example .env && vi .env
+git clone git@github.com:davidecaruso/wazowski.git
+cd wazowski && cp .env.example .env && vi .env
+```
+
+## Usage
+#### With Docker
+```shell script
+docker-compose up --build -d
+```
+#### With Python3
+```shell script
 pip3 install --no-cache-dir -r requirements.txt
 python3 main.py
 ```
